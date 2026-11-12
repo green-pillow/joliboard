@@ -1,0 +1,33 @@
+.workspace-view.is-current,.detail-page{animation:page-enter 180ms cubic-bezier(.2,.65,.3,1) both}
+.workspace-view[hidden],.page-outlet[hidden]{display:none}
+.page-outlet{min-height:55vh}
+.page-outlet:has(>.detail-page)>.page-loading{display:none}
+.page-loading{padding:60px 20px;text-align:center;color:var(--text-secondary);font-size:var(--text-body)}
+.detail-page{max-width:1040px;margin:0 auto 30px;min-width:0}
+.detail-page.wide-page{max-width:1180px}
+.detail-back{font-size:var(--text-body);padding:9px 0;margin-bottom:16px;min-height:40px}
+.detail-page-heading{display:flex;align-items:flex-start;gap:18px;margin-bottom:24px}
+.detail-page-heading h1{font-size:var(--text-page);font-weight:750;line-height:1.25;letter-spacing:-.9px;margin:9px 0 0;outline:none}
+.detail-page-heading .eyebrow{line-height:1.6}
+.detail-card{padding:28px;min-width:0}
+.detail-card>p{font-size:var(--text-body);color:var(--text-secondary)}
+.detail-card>.field{margin:20px 0}
+.detail-card .form-grid{gap:22px}
+.detail-card .product-heading{padding-bottom:22px;border-bottom:1px solid var(--border)}
+.detail-card .product-heading h3{font-size:var(--text-section);line-height:1.45}
+.detail-card .product-priority p,.detail-card .info-note{max-width:none}
+.detail-actions{display:flex;justify-content:flex-end;align-items:center;flex-wrap:wrap;gap:12px;padding:22px 0 0;border-top:1px solid var(--border);margin-top:28px}
+.detail-actions .left{margin-right:auto}
+.detail-page .form-divider{margin:24px 0 18px}
+.detail-page .execution-steps{grid-template-columns:1fr;gap:16px}
+@keyframes page-enter{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:760px){
+  .detail-page{margin-bottom:22px}
+  .detail-page-heading{margin-bottom:20px}
+  .detail-card{padding:20px 17px}
+  .detail-back{margin-bottom:12px}
+  .detail-card .form-grid{grid-template-columns:1fr;gap:20px}
+  .detail-actions{gap:10px;margin-top:24px}
+  .detail-actions .button{flex:1;min-width:140px}
+}
+@media(prefers-reduced-motion:reduce){.workspace-view.is-current,.detail-page{animation:none;transform:none}}

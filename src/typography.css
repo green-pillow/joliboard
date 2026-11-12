@@ -1,0 +1,14 @@
+/* Shared type hierarchy. Compact layouts reflow; they do not shrink the text. */
+:root {
+  --text-label: 10px;
+  --text-meta: 12px;
+  --text-body: 14px;
+  --text-title: 16px;
+  --text-card: 18px;
+  --text-section: 20px;
+  --text-dialog: 24px;
+  --text-page: clamp(30px, 1.4vw + 16px, 36px);
+  --text-display: clamp(32px, 2vw + 10px, 40px);
+  --leading-body: 1.55;
+  --text-secondary: #64715f;
+}

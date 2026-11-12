@@ -1,0 +1,10 @@
+import React from 'react';
+import { createRoot } from 'react-dom/client';
+import App from './App';
+import { PageProvider } from './page-navigation';
+import './typography.css';
+import './styles.css';
+import './dashboard.css';
+import './warehouse.css';
+import './metrics.css';
+createRoot(document.getElementById('root')!).render(<React.StrictMode><PageProvider><App/></PageProvider></React.StrictMode>);
